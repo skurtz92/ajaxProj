@@ -25,7 +25,7 @@ $(document).on('click', '.foodButton', function(){
     $(this).addClass('active');
 
     var type = $(this).data('type');
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=dc6zaTOxFJmzC&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=dc6zaTOxFJmzC&limit=10";
 
     $.ajax({url: queryURL, method: 'GET'})
      .done(function(response) { // when it is done it will return the response of the object 
